@@ -1,6 +1,6 @@
 ## KOD ŹRÓDŁOWY
 https://github.com/hgeg/candy-led
-
+https://blog.nanax.fr/post/2018-05-01-chromebook-linux/#chromebook-keyboard-layout
 
 ## DELL 3120 Chromebook
 
