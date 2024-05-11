@@ -32,7 +32,7 @@ W dystrybucji Arch Linux może dochodzić do zmiany numeru urządzenia po aktual
 
   ```$ sudo python filename.py```
 * Fedora Linux
-* 
+
   powinno działać ale nie było sprawdzane
 
 ## PRZYSZŁOŚĆ
