@@ -31,6 +31,9 @@ W dystrybucji Arch Linux może dochodzić do zmiany numeru urządzenia po aktual
 * Arch Linux
 
   ```$ sudo python filename.py```
+* Fedora Linux
+* 
+  powinno działać ale nie było sprawdzane
 
 ## PRZYSZŁOŚĆ
 Planowane jest stworzenie GUI!
