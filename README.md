@@ -1,3 +1,7 @@
+## KOD ŹRÓDŁOWY
+https://github.com/hgeg/candy-led
+
+
 ## DELL 3120 Chromebook
 
 Programy w języku Python, który umożliwiają sterowanie lampką LED na klapie laptopa.
