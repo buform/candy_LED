@@ -1,9 +1,9 @@
 ## KOD ŹRÓDŁOWY
-https://github.com/hgeg/candy-led
+* https://github.com/hgeg/candy-led
 
-https://blog.nanax.fr/post/2018-05-01-chromebook-linux/#chromebook-keyboard-layout
+* https://blog.nanax.fr/post/2018-05-01-chromebook-linux/#chromebook-keyboard-layout
 
-https://forum.endeavouros.com/t/dell-chromebook-3180-activity-light/33895
+* https://forum.endeavouros.com/t/dell-chromebook-3180-activity-light/33895
 
 ## DELL 3120 Chromebook
 
@@ -23,7 +23,7 @@ katalog blink = programy, które powodują miganie lampki
 * biały
 
 ## NIE DZIAŁA
-W przypadku braku zaświecenia się lampki należy wejść w plik i w 7. linijce zmienić przy nazwie hidraw cyfrę na 0 / 1 / 2.
+W przypadku braku zaświecenia się lampki należy wejść w plik i w 7. linijce zmienić przy nazwie ```hidraw``` cyfrę na 0 / 1 / 2.
 
 W dystrybucji Arch Linux może dochodzić do zmiany numeru urządzenia po aktualizacji.
 
