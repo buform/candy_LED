@@ -30,13 +30,19 @@ W dystrybucji Arch Linux może dochodzić do zmiany numeru urządzenia po aktual
 ## URUCHOMIENIE
 * Debian GNU/Linux
 
-  ```$ sudo python3 filename.py```
+  ```sh
+sudo python3 filename.py
+  ```
 * Arch Linux
 
-  ```$ sudo python filename.py```
+  ```sh
+sudo python filename.py
+  ```
 * Fedora Linux
 
-  ```$ sudo python filename.py```
+  ```sh
+  sudo python filename.py
+  ```
 
 ## PRZYSZŁOŚĆ
 Planowane jest stworzenie GUI!
