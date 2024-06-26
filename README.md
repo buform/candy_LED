@@ -22,6 +22,8 @@ katalog blink = programy, które powodują miganie lampki
 * turkus
 * biały
 
+Kolor czarny to pozycja wyłączenia lampki LED.
+
 ## NIE DZIAŁA
 W przypadku braku zaświecenia się lampki należy wejść w plik i w 7. linijce zmienić przy nazwie ```hidraw``` cyfrę na 0 / 1 / 2.
 
