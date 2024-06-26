@@ -75,4 +75,4 @@ Do uruchomienia pliku ```candy_led_gui.py``` potrzebna jest bibioteka Pythona ``
 Uruchomienie wykonuje się tak samo jak przy podstawowych programach. Dodatkowo GUI obsługuje ciągłe świecnie się lampki oraz miganie.
 
 ## PRZYSZŁOŚĆ
-Planowane jest stowrzenie prostego pliku wykonywalnego, lecz ze względu na konieczność uprawnień roota będzie z tym problem.
+Planowane jest stworzenie prostego pliku wykonywalnego, lecz ze względu na konieczność uprawnień roota będzie z tym problem.
