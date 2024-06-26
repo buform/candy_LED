@@ -31,13 +31,15 @@ W dystrybucji Arch Linux może dochodzić do zmiany numeru urządzenia po aktual
 * Debian GNU/Linux
 
   ```sh
-sudo python3 filename.py
+  sudo python3 filename.py
   ```
+
 * Arch Linux
 
   ```sh
-sudo python filename.py
+  sudo python filename.py
   ```
+
 * Fedora Linux
 
   ```sh
