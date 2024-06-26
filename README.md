@@ -46,5 +46,27 @@ W dystrybucji Arch Linux może dochodzić do zmiany numeru urządzenia po aktual
   sudo python filename.py
   ```
 
-## PRZYSZŁOŚĆ
-Planowane jest stworzenie GUI!
+## GUI
+Do uruchomienia pliku ```candy_led_gui.py``` potrzebna jest bibioteka Pythona - ```tkinter```.
+
+**INSTALACJA**
+
+* Debian GNU/Linux
+
+  ```sh
+  sudo apt install python3-tk
+  ```
+  
+* Arch Linux
+
+  ```sh
+  sudo pacman -S tk
+  ```
+
+* Fedora Linux
+
+  ```sh
+  sudo dnf install python3-tkinter
+  ```
+
+Uruchomienie wykonuje się tak samo jak przy podstawowych programach.
