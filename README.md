@@ -30,6 +30,7 @@ W przypadku braku zaświecenia się lampki należy wejść w plik i w 7. linijce
 W dystrybucji Arch Linux może dochodzić do zmiany numeru urządzenia po aktualizacji.
 
 ## URUCHOMIENIE
+Plik wymaga uprawnień roota do uruchomienia!
 * Debian GNU/Linux
 
   ```sh
