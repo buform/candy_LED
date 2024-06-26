@@ -13,6 +13,8 @@ katalog const = programy, które powodują ciągłe świecenie się lampki
 
 katalog blink = programy, które powodują miganie lampki
 
+katalog gui = wersje programów GUI
+
 ## KOLORY
 * czerowny
 * zielony
