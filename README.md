@@ -47,7 +47,7 @@ W dystrybucji Arch Linux może dochodzić do zmiany numeru urządzenia po aktual
   ```
 
 ## GUI
-Do uruchomienia pliku ```candy_led_gui.py``` potrzebna jest bibioteka Pythona - ```tkinter```.
+Do uruchomienia pliku ```candy_led_gui.py``` potrzebna jest bibioteka Pythona ```tkinter```.
 
 **INSTALACJA**
 
