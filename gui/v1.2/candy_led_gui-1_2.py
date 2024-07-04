@@ -125,21 +125,21 @@ def create_blink_menu(main_window):
         )
         button.pack(pady=5, padx=10, fill=tk.X)
 
-    def stop_blinking_and_back():
-        global blink_active
-        blink_active = False
-        changeColor('black')
-        color_window.destroy()
-
     def stop_blinking():
         global blink_active
         blink_active = False
         changeColor('black')
 
+    def back_and_set_black():
+        global blink_active
+        blink_active = False
+        changeColor('black')
+        color_window.destroy()
+
     back_button = tk.Button(
         color_window,
         text="BACK",
-        command=stop_blinking_and_back,
+        command=back_and_set_black,
         bg="grey",
         fg="white"
     )
