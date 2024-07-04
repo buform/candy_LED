@@ -108,9 +108,6 @@ def create_color_menu(main_window):
     back_button.pack(pady=10, padx=10, fill=tk.X)
 
 def create_blink_menu(main_window):
-    global blink_active
-    blink_active = True
-
     color_window = tk.Toplevel()
     color_window.title("CONTROL PANEL OF CANDY LED - BLINK")
 
@@ -119,7 +116,7 @@ def create_blink_menu(main_window):
         button = tk.Button(
             color_window,
             text=color.capitalize(),
-            command=lambda c=color: blink_color(c),
+            command=lambda c=color: start_blinking(c),
             bg=tk_colors[color],
             fg=fg_color
         )
@@ -153,6 +150,12 @@ def create_blink_menu(main_window):
         fg="white"
     )
     stop_button.pack(pady=10, padx=10, fill=tk.X)
+
+def start_blinking(color):
+    """ Start blinking with the specified color """
+    global blink_active
+    blink_active = True
+    blink_color(color)
 
 if __name__ == "__main__":
     create_main_menu()
