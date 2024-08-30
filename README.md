@@ -29,24 +29,21 @@ Kolor czarny to pozycja wyłączenia lampki LED.
 ## NIE DZIAŁA
 W przypadku braku zaświecenia się lampki należy wejść w plik i w 7. linijce zmienić przy nazwie ```hidraw``` cyfrę na 0 / 1 / 2.
 
-W dystrybucji Arch Linux może dochodzić do zmiany numeru urządzenia po aktualizacji.
+W dystrybucji Arch Linux może dochodzić do zmiany numeru urządzenia po aktualizacji systemu.
 
 ## URUCHOMIENIE
 Plik wymaga uprawnień roota do uruchomienia!
 * Debian GNU/Linux
-
   ```sh
   sudo python3 filename.py
   ```
 
 * Arch Linux
-
   ```sh
   sudo python filename.py
   ```
 
 * Fedora Linux
-
   ```sh
   sudo python filename.py
   ```
