@@ -27,7 +27,7 @@ katalog gui = wersje programów GUI
 Kolor czarny to pozycja wyłączenia lampki LED.
 
 ## NIE DZIAŁA
-W przypadku braku zaświecenia się lampki należy wejść w plik i w 7. linijce zmienić przy nazwie ```hidraw``` cyfrę na 0 / 1 / 2.
+W przypadku braku zaświecenia się lampki należy wejść w plik, w 7. linijce zmienić przy nazwie ```hidraw``` cyfrę na 0 lub 1 lub 2.
 
 W dystrybucji Arch Linux może dochodzić do zmiany numeru urządzenia po aktualizacji systemu.
 
@@ -71,4 +71,4 @@ Do uruchomienia pliku ```candy_led_gui.py``` potrzebna jest bibioteka Pythona ``
   sudo dnf install python3-tkinter
   ```
 
-Uruchomienie wykonuje się tak samo jak przy podstawowych programach. Dodatkowo GUI obsługuje ciągłe świecnie się lampki oraz miganie.
+Uruchomienie wykonuje się tak samo jak przy podstawowych programach. Dodatkowo GUI obsługuje ciągłe świecenie się lampki oraz miganie.
