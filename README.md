@@ -5,7 +5,7 @@
 
 * https://forum.endeavouros.com/t/dell-chromebook-3180-activity-light/33895
 
-## DELL 3120 Chromebook
+## DELL CHROMEBOOK 11 3120 Chromebook
 
 Programy w języku Python, który umożliwiają sterowanie lampką LED na klapie laptopa.
 
