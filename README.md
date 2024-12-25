@@ -1,4 +1,4 @@
-<p align="center">Control panel to led on DELL laptops flap. </p>
+<p align="center"># Control panel to led on DELL laptops flaps. </p>
 
 ## KOD ŹRÓDŁOWY
 * https://github.com/hgeg/candy-led
