@@ -7,9 +7,9 @@
 
 ## PROGRAM
 
-* Programy w języku Python, który umożliwiają sterowanie lampką LED na klapie laptopa.
+* Programy w języku Python, które umożliwiają sterowanie lampką LED na klapie laptopa.
 
- * katalog const = programy, które powodują ciągłe świecenie się lampki
+* katalog const = programy, które powodują ciągłe świecenie się lampki
 
 * katalog blink = programy, które powodują miganie lampki
 
