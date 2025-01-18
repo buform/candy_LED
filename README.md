@@ -6,14 +6,19 @@
 * https://forum.endeavouros.com/t/dell-chromebook-3180-activity-light/33895
 
 ## PROGRAM
+Programy są w języku Python, które umożliwiają sterowanie lampką LED na klapie laptopa. Główna część kodu pochodzi ze źródeł. Interfejs graficzny został napisany za pomocą AI (ChatGPT).
 
-* Programy w języku Python, które umożliwiają sterowanie lampką LED na klapie laptopa.
+Po uruchomieniu programu (wersja GUI) należy ustawić urządzenie (jego położenie w katalogu ```/dev/```). Następnie znajdują się dwie kategorie: ```CONST``` - opcja stałego wyświetlania danego koloru, oraz ```BLINK``` - ustawienie koloru migającego oraz jego częstotliwośći w formie suwaka, jednostką są milisekundy.
 
-* katalog const = programy, które powodują ciągłe świecenie się lampki
+1 Hz -> 1000 ms -> 1s
 
-* katalog blink = programy, które powodują miganie lampki
+Katalog ```GUI``` zawiera wszytskie wersje rozwojowe interfejsu graficznego. Dodatkowo znajdują się katalogi ```const``` oraz ```blink```, w których są pierwsze, proste wersje programu.
 
-* katalog gui = wersje programów GUI
+* katalog ```const`` = programy, które powodują ciągłe świecenie się lampki
+
+* katalog ```blink``` = programy, które powodują miganie lampki
+
+* katalog ```gui``` = wersje programów GUI
 
 ## KOLORY
 * czerowny
@@ -29,10 +34,14 @@ Kolor czarny to pozycja wyłączenia lampki LED.
 ## NIE DZIAŁA
 W przypadku braku zaświecenia się lampki należy wejść w plik, w 7. linijce zmienić przy nazwie ```hidraw``` cyfrę na 0 lub 1 lub 2.
 
+W wersji GUI można wpisać ścieżkę do urządzenia.
+
 W dystrybucji Arch Linux może dochodzić do zmiany numeru urządzenia po aktualizacji systemu.
 
+```/dev/hidraw```
+
 ## URUCHOMIENIE
-Plik wymaga uprawnień roota do uruchomienia!
+Plik wymaga uprawnień roota do uruchomienia! Polecam używać ```sudo```.
 * Debian GNU/Linux
   ```sh
   sudo python3 filename.py
@@ -71,4 +80,7 @@ Do uruchomienia pliku ```candy_led_gui.py``` potrzebna jest bibioteka Pythona ``
   sudo dnf install python3-tkinter
   ```
 
-Uruchomienie wykonuje się tak samo jak przy podstawowych programach. Dodatkowo GUI obsługuje ciągłe świecenie się lampki oraz miganie.
+## ROZWÓJ
+Obecnie planowane jest stworzenie paczki dla systemu Debian GNU/Linux. Problemem jest wykorzystanie ```pkexec```, nie chce współpracować podczas uruchamiania atywatora w DE XFCE.
+
+Przed każdym uruchomieniem skryptu ma wyświetlać się GUI do wpisania hasła aby skrypt miał dostęp do katalogu ```/dev/```. Ma to na celu zastąpienie ręcznego uruchamiania programu w terminalu za każdym razem.
