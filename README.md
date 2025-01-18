@@ -14,7 +14,7 @@ Po uruchomieniu programu (wersja GUI) należy ustawić urządzenie (jego położ
 
 Katalog ```GUI``` zawiera wszytskie wersje rozwojowe interfejsu graficznego. Dodatkowo znajdują się katalogi ```const``` oraz ```blink```, w których są pierwsze, proste wersje programu.
 
-* katalog ```const`` = programy, które powodują ciągłe świecenie się lampki
+* katalog ```const``` = programy, które powodują ciągłe świecenie się lampki
 
 * katalog ```blink``` = programy, które powodują miganie lampki
 
