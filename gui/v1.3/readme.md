@@ -1,3 +1,3 @@
 CO NOWEGO?
 * możliwość wpisania ścieżki do urządzenia ```hidraw``` w formie GUI
-* suwak służacy do ustawiania częstotliwośći migania w kategorii ```blink```
+* suwak służacy do ustawiania częstotliwości migania w kategorii ```blink```
