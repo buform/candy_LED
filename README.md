@@ -12,7 +12,7 @@ Po uruchomieniu programu (wersja GUI) należy ustawić urządzenie (jego położ
 
 1 Hz -> 1000 ms -> 1s
 
-Katalog ```GUI``` zawiera wszytskie wersje rozwojowe interfejsu graficznego. Dodatkowo znajdują się katalogi ```const``` oraz ```blink```, w których są pierwsze, proste wersje programu.
+Katalog ```GUI``` zawiera wszystkie wersje rozwojowe interfejsu graficznego. Dodatkowo znajdują się katalogi ```const``` oraz ```blink```, w których są pierwsze, proste wersje programu.
 
 * katalog ```const``` = programy, które powodują ciągłe świecenie się lampki
 
