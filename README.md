@@ -1,8 +1,10 @@
 ## KOD ŹRÓDŁOWY
 * https://github.com/hgeg/candy-led
 
-* https://blog.nanax.fr/post/2018-05-01-chromebook-linux/#chromebook-keyboard-layout
+## POMYSŁ NA PROGRAM
+* https://blog.nanax.fr/post/2018-05-01-chromebook-linux
 
+## INSPIRACJA
 * https://forum.endeavouros.com/t/dell-chromebook-3180-activity-light/33895
 
 ## PROGRAM
