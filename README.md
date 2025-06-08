@@ -10,7 +10,7 @@
 ## PROGRAM
 Programy są w języku Python, które umożliwiają sterowanie lampką LED na klapie laptopa. Główna część kodu pochodzi ze źródeł. Interfejs graficzny został napisany za pomocą AI (ChatGPT) (do wersji 1.2).
 
-Po uruchomieniu programu (wersja GUI) należy ustawić urządzenie (jego położenie w katalogu ```/dev/```). Następnie znajdują się dwie kategorie: ```CONST``` - opcja stałego wyświetlania danego koloru, oraz ```BLINK``` - ustawienie koloru migającego oraz jego częstotliwośći w formie suwaka, jednostką są milisekundy.
+Po uruchomieniu programu (wersja GUI) należy ustawić urządzenie (jego położenie w katalogu ```/dev/```). Następnie znajdują się dwie kategorie: ```CONST``` - opcja stałego wyświetlania danego koloru, oraz ```BLINK``` - ustawienie koloru migającego oraz jego częstotliwości w formie suwaka, jednostką są milisekundy.
 
 1 Hz -> 1000 ms -> 1s
 
