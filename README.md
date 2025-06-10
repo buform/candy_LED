@@ -81,8 +81,3 @@ Do uruchomienia pliku ```candy_led_gui.py``` potrzebna jest bibioteka Pythona ``
   ```sh
   sudo dnf install python3-tkinter
   ```
-
-## ROZWÓJ
-Obecnie planowane jest stworzenie paczki dla systemu Debian GNU/Linux. Problemem jest wykorzystanie ```pkexec```, nie chce współpracować podczas uruchamiania atywatora w DE XFCE.
-
-Przed każdym uruchomieniem skryptu ma wyświetlać się GUI do wpisania hasła aby skrypt miał dostęp do katalogu ```/dev/```. Ma to na celu zastąpienie ręcznego uruchamiania programu w terminalu za każdym razem.
