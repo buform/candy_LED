@@ -1,3 +1,13 @@
+<!--
+# Candy LED
+
+This program allows of control LED indicator on laptop flap. Main code comes from sources. Graphical user interface (GUI) has been made/improved by SI (vibe coding).
+
+* [source code](https://github.com/hgeg/candy-led)
+* [idea](https://blog.nanax.fr/post/2018-05-01-chromebook-linux)
+* [inspiration](https://forum.endeavouros.com/t/dell-chromebook-3180-activity-light/33895)
+-->
+
 ### KOD ŹRÓDŁOWY
 * https://github.com/hgeg/candy-led
 
@@ -9,6 +19,7 @@
 
 ### PROGRAM
 Programy są w języku Python, które umożliwiają sterowanie lampką LED na klapie laptopa. Główna część kodu pochodzi ze źródeł. Interfejs graficzny został napisany (poprawiony) za pomocą AI (vibe coding).
+
 
 Po uruchomieniu programu (wersja GUI) należy ustawić urządzenie (jego położenie w katalogu ```/dev/```). Następnie znajdują się dwie kategorie: ```CONST``` - opcja stałego wyświetlania danego koloru, oraz ```BLINK``` - ustawienie koloru migającego oraz jego częstotliwości w formie suwaka, jednostką są milisekundy.
 
