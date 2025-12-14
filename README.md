@@ -1,99 +1,83 @@
-<!--
-# Candy LED
 
+# Candy LED
+## Introduction
 This program allows of control LED indicator on laptop flap. Main code comes from sources. Graphical user interface (GUI) has been made/improved by SI (vibe coding).
 
 * [source code](https://github.com/hgeg/candy-led)
 * [idea](https://blog.nanax.fr/post/2018-05-01-chromebook-linux)
 * [inspiration](https://forum.endeavouros.com/t/dell-chromebook-3180-activity-light/33895)
--->
 
-### KOD ŹRÓDŁOWY
-* https://github.com/hgeg/candy-led
+## Folders
+| folder name |  description |
+| ------------- | ------------- |
+| const | simple programs to set colour of light  |
+| blink  | simple programs to set blinking  |
+| gui | gui version of main program |
+| other | other staff |
 
-### POMYSŁ NA PROGRAM
-* https://blog.nanax.fr/post/2018-05-01-chromebook-linux
+## Colorus
+* red
+* green
+* blue
+* yellow
+* magenta
+* cyan
+* white
+* black
 
-### INSPIRACJA
-* https://forum.endeavouros.com/t/dell-chromebook-3180-activity-light/33895
+> [!NOTE]
+> Black colour turns off LED indicator.
 
-### PROGRAM
-Programy są w języku Python, które umożliwiają sterowanie lampką LED na klapie laptopa. Główna część kodu pochodzi ze źródeł. Interfejs graficzny został napisany (poprawiony) za pomocą AI (vibe coding).
-
-
-Po uruchomieniu programu (wersja GUI) należy ustawić urządzenie (jego położenie w katalogu ```/dev/```). Następnie znajdują się dwie kategorie: ```CONST``` - opcja stałego wyświetlania danego koloru, oraz ```BLINK``` - ustawienie koloru migającego oraz jego częstotliwości w formie suwaka, jednostką są milisekundy.
-
-1 Hz -> 1000 ms -> 1s
-
-Katalog ```GUI``` zawiera wszystkie wersje rozwojowe interfejsu graficznego. Dodatkowo znajdują się katalogi ```const``` oraz ```blink```, w których są pierwsze, proste wersje programu.
-
-* katalog ```const``` = programy, które powodują ciągłe świecenie się lampki
-
-* katalog ```blink``` = programy, które powodują miganie lampki
-
-* katalog ```gui``` = wersje programów GUI
-
-### KOLORY
-* czerowny
-* zielony
-* niebieski
-* żółty
-* fiolet
-* turkus
-* biały
-
-Kolor czarny to pozycja wyłączenia lampki LED.
-
-### NIE DZIAŁA
-W przypadku braku zaświecenia się lampki należy wejść w plik, w 7. linijce zmienić przy nazwie ```hidraw``` cyfrę na 0 lub 1 lub 2.
-
-W wersji GUI można wpisać ścieżkę do urządzenia.
-
-W dystrybucji Arch Linux może dochodzić do zmiany numeru urządzenia po aktualizacji systemu.
-
-```/dev/hidraw```
-
-### URUCHOMIENIE
-Plik wymaga uprawnień roota do uruchomienia! Polecam używać ```sudo```.
-* Debian GNU/Linux
-  ```sh
-  sudo python3 filename.py
-  ```
-
-* Arch Linux
-  ```sh
-  sudo python filename.py
-  ```
-
-* Fedora Linux
-  ```sh
-  sudo python filename.py
-  ```
-
-### GUI
-Do uruchomienia pliku ```candy_led_gui.py``` potrzebna jest bibioteka Pythona ```tkinter```.
-
-**INSTALACJA**
-
-* Debian GNU/Linux
+## Necessary packages
+If you want to start the gui version of program, you need a tinker package for python.
+* **Debian GNU/Linux**
 
   ```sh
   sudo apt install python3-tk
   ```
   
-* Arch Linux
+* **Arch Linux**
 
   ```sh
   sudo pacman -S tk
   ```
 
-* Fedora Linux
+* **Fedora Linux - The Fedora Project**
 
   ```sh
   sudo dnf install python3-tkinter
   ```
 
-### ZRZUTY EKRANU
+## How to start a python program?
+* **Debian GNU/Linux**
+  ```sh
+  sudo python3 filename.py
+  ```
+
+* **Arch Linux**
+  ```sh
+  sudo python filename.py
+  ```
+
+* **Fedora Linux - The Fedora Project**
+  ```sh
+  sudo python filename.py
+  ```
+
+> [!IMPORTANT]
+> After program started (GUI version) you <ins> **have to**</ins> set the devpath (path to the LED indicator in system folders) and <ins> **save it**</ins>.
+
+> [!TIP]
+> 1 Hz -> 1000 ms -> 1s
+
+## Issues...
+If you have a issue with turing on your LED indicator, you need to change the device in devpath. For example in Arch Linux sometimes after system (packages) update, number of device may change.
+Then you need to open the file.py by any text editor and modify 7. line of code, there is ```hidraw``` - you need to change the number to 0 or 1 or 2 or even 3 (maybe).
+> [!NOTE]
+> In gui version there is special menu to easy set device.
+
+
+### Screenshots
 ![screenshot](other/candy_led-screenshot-1.png?raw=true)
 ![screenshot](other/candy_led-screenshot-4.png?raw=true)
 ![screenshot](other/candy_led-screenshot-2.png?raw=true)
