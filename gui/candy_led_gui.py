@@ -3,7 +3,7 @@
 import tkinter as tk
 from random import randrange
 
-# spis kolorów
+# color list
 colors = {
     'red': 0x01,
     'green': 0x02,
@@ -26,10 +26,11 @@ tk_colors = {
     'black': 'black'
 }
 
-devpath = ""  # Ścieżka urządzenia
+devpath = ""  # path to the device (led)				# <-------- DEVPATH
 blink_active = False
-blink_interval = 1000  # Domyślny czas ON/OFF w milisekundach
+blink_interval = 1000  # default time of blinking (miliseconds)
 
+# create function to change color (const)
 def changeColor(color='white'):
     global devpath
 
@@ -52,6 +53,7 @@ def changeColor(color='white'):
         error_message = f"Can't access {devpath}. Please check the device path."
         tk.messagebox.showerror("Error", error_message)
 
+# Create function to blink
 def blink_color(color):
     global blink_active, blink_interval
 
@@ -60,7 +62,8 @@ def blink_color(color):
         main_window.after(blink_interval // 2, lambda: changeColor('black'))
         main_window.after(blink_interval, lambda: blink_color(color))
 
-def select_device(): # menu wybierania urządzenia LED
+# Create function to gui menu "select device"
+def select_device():
     global devpath
 
     device_window = tk.Toplevel()
@@ -86,11 +89,12 @@ def select_device(): # menu wybierania urządzenia LED
     cancel_button = tk.Button(device_window, text="CANCEL", command=device_window.destroy, bg="red", fg="white")
     cancel_button.pack(pady=5)
 
+# Create function of gui main menu
 def create_main_menu():
     global main_window
     main_window = tk.Tk()
-    main_window.title("MAIN MENU")  # tytuł głównego okna
-    main_window.geometry("800x600") # rozmiar okna Main Menu
+    main_window.title("MAIN MENU")  # title of the window
+    main_window.geometry("800x600") # size of the window
     
     title_label = tk.Label(
 		main_window,
@@ -149,8 +153,8 @@ def create_main_menu():
 
 def create_color_menu(main_window):
     color_window = tk.Toplevel()
-    color_window.title("CONST MENU") # tytuł okna CONST
-    color_window.geometry("400x400") # rozmiar okna
+    color_window.title("CONST MENU")	# title
+    color_window.geometry("400x400")	# size
 
     for color in colors:
         fg_color = 'black' if color in ['yellow', 'white'] else 'white'
@@ -175,7 +179,7 @@ def create_color_menu(main_window):
 def create_blink_menu(main_window):
     global blink_interval
     color_window = tk.Toplevel()
-    color_window.title("BLINK MENU") # tytuł okna BLINK
+    color_window.title("BLINK MENU")	# title
 
     for color in colors:
         fg_color = 'black' if color in ['yellow', 'white'] else 'white'
@@ -192,11 +196,11 @@ def create_blink_menu(main_window):
         global blink_interval
         blink_interval = int(value)
 
-    tk.Label(color_window, text="Set Blink Interval (ms):").pack(pady=5) # pasek sterowania częstotliwością migotania
+    tk.Label(color_window, text="Set Blink Interval (ms):").pack(pady=5)			# slider to adjust blink freq
     interval_slider = tk.Scale(
         color_window,
-        from_=100, # minimalna wartość w milisekundach
-        to=2000, # maksymalna wartość w milisekundach
+        from_=100, # min value [ms]
+        to=2000, # max value [ms]
         orient='horizontal',
         length=300,
         command=update_interval
