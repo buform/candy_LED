@@ -1,13 +1,13 @@
-## KOD ŹRÓDŁOWY
+### KOD ŹRÓDŁOWY
 * https://github.com/hgeg/candy-led
 
-## POMYSŁ NA PROGRAM
+### POMYSŁ NA PROGRAM
 * https://blog.nanax.fr/post/2018-05-01-chromebook-linux
 
-## INSPIRACJA
+### INSPIRACJA
 * https://forum.endeavouros.com/t/dell-chromebook-3180-activity-light/33895
 
-## PROGRAM
+### PROGRAM
 Programy są w języku Python, które umożliwiają sterowanie lampką LED na klapie laptopa. Główna część kodu pochodzi ze źródeł. Interfejs graficzny został napisany za pomocą AI (ChatGPT) (do wersji 1.2).
 
 Po uruchomieniu programu (wersja GUI) należy ustawić urządzenie (jego położenie w katalogu ```/dev/```). Następnie znajdują się dwie kategorie: ```CONST``` - opcja stałego wyświetlania danego koloru, oraz ```BLINK``` - ustawienie koloru migającego oraz jego częstotliwości w formie suwaka, jednostką są milisekundy.
@@ -22,7 +22,7 @@ Katalog ```GUI``` zawiera wszystkie wersje rozwojowe interfejsu graficznego. Dod
 
 * katalog ```gui``` = wersje programów GUI
 
-## KOLORY
+### KOLORY
 * czerowny
 * zielony
 * niebieski
@@ -33,7 +33,7 @@ Katalog ```GUI``` zawiera wszystkie wersje rozwojowe interfejsu graficznego. Dod
 
 Kolor czarny to pozycja wyłączenia lampki LED.
 
-## NIE DZIAŁA
+### NIE DZIAŁA
 W przypadku braku zaświecenia się lampki należy wejść w plik, w 7. linijce zmienić przy nazwie ```hidraw``` cyfrę na 0 lub 1 lub 2.
 
 W wersji GUI można wpisać ścieżkę do urządzenia.
@@ -42,7 +42,7 @@ W dystrybucji Arch Linux może dochodzić do zmiany numeru urządzenia po aktual
 
 ```/dev/hidraw```
 
-## URUCHOMIENIE
+### URUCHOMIENIE
 Plik wymaga uprawnień roota do uruchomienia! Polecam używać ```sudo```.
 * Debian GNU/Linux
   ```sh
@@ -59,7 +59,7 @@ Plik wymaga uprawnień roota do uruchomienia! Polecam używać ```sudo```.
   sudo python filename.py
   ```
 
-## GUI
+### GUI
 Do uruchomienia pliku ```candy_led_gui.py``` potrzebna jest bibioteka Pythona ```tkinter```.
 
 **INSTALACJA**
@@ -81,3 +81,6 @@ Do uruchomienia pliku ```candy_led_gui.py``` potrzebna jest bibioteka Pythona ``
   ```sh
   sudo dnf install python3-tkinter
   ```
+
+### ZRZUTY EKRANU
+![screenshot](other/candy_led-screenshot-1.png?raw=true)
