@@ -76,8 +76,11 @@ Then you need to open the file.py by any text editor and modify 7. line of code,
 > [!NOTE]
 > In gui version there is special menu to easy set device.
 
+## To do
+- [x] make gui
+- [ ] eliminate terminal from starting the program
 
-### Screenshots
+## Screenshots
 ![screenshot](other/candy_led-screenshot-1.png?raw=true)
 ![screenshot](other/candy_led-screenshot-4.png?raw=true)
 ![screenshot](other/candy_led-screenshot-2.png?raw=true)
