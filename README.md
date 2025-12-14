@@ -8,7 +8,7 @@
 * https://forum.endeavouros.com/t/dell-chromebook-3180-activity-light/33895
 
 ### PROGRAM
-Programy są w języku Python, które umożliwiają sterowanie lampką LED na klapie laptopa. Główna część kodu pochodzi ze źródeł. Interfejs graficzny został napisany za pomocą AI (ChatGPT) (do wersji 1.2).
+Programy są w języku Python, które umożliwiają sterowanie lampką LED na klapie laptopa. Główna część kodu pochodzi ze źródeł. Interfejs graficzny został napisany (poprawiony) za pomocą AI (vibe coding).
 
 Po uruchomieniu programu (wersja GUI) należy ustawić urządzenie (jego położenie w katalogu ```/dev/```). Następnie znajdują się dwie kategorie: ```CONST``` - opcja stałego wyświetlania danego koloru, oraz ```BLINK``` - ustawienie koloru migającego oraz jego częstotliwości w formie suwaka, jednostką są milisekundy.
 
@@ -84,3 +84,6 @@ Do uruchomienia pliku ```candy_led_gui.py``` potrzebna jest bibioteka Pythona ``
 
 ### ZRZUTY EKRANU
 ![screenshot](other/candy_led-screenshot-1.png?raw=true)
+![screenshot](other/candy_led-screenshot-4.png?raw=true)
+![screenshot](other/candy_led-screenshot-2.png?raw=true)
+![screenshot](other/candy_led-screenshot-3.png?raw=true)
