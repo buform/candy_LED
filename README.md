@@ -15,6 +15,10 @@ This program allows of control LED indicator on laptop flap. Main code comes fro
 | gui | gui version of main program |
 | other | other staff |
 
+## Models of Chromebooks
+* DELL Chromebook 11 3120
+* DELL Chromebook 11 3180
+
 ## Colorus
 * red
 * green
