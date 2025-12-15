@@ -30,19 +30,19 @@ This program allows of control LED indicator on laptop flap. Main code comes fro
 
 ## Necessary packages
 If you want to start the gui version of program, you need a tinker package for python.
-* **Debian GNU/Linux**
+* [**Debian GNU/Linux**](https://packages.debian.org/trixie/python3-tk)
 
   ```sh
   sudo apt install python3-tk
   ```
   
-* **Arch Linux**
+* [**Arch Linux**](https://archlinux.org/packages/extra/x86_64/tk/)
 
   ```sh
   sudo pacman -S tk
   ```
 
-* **Fedora Linux - The Fedora Project**
+* [**Fedora Linux - The Fedora Project**](https://packages.fedoraproject.org/pkgs/python3.14/python3-tkinter/)
 
   ```sh
   sudo dnf install python3-tkinter
